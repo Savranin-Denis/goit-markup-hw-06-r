@@ -344,19 +344,10 @@ body {
   }
 }
 
-.mobile-close-icon {
-}
-
-.mobile-nav {
-}
-
 .mobile-nav-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
-}
-
-.mobile-nav-item {
 }
 
 .mobile-nav-link {
@@ -384,8 +375,7 @@ body {
   flex-direction: column;
   gap: 24px;
 }
-.mobile-adress-item {
-}
+
 .mobile-adress-link {
   font-weight: 500;
   font-size: 20px;
@@ -404,9 +394,6 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 280px;
-}
-
-.mobile-socials-item {
 }
 
 .mobile-socials-link {
@@ -439,3 +426,96 @@ body {
   }
 }
 /* #endregion mobile menu */
+
+/* #region Hero */
+.hero-section {
+  background-color: #2e2f42;
+}
+
+.hero-bg-wrap {
+  background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.hero-wrap {
+  padding-block: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 216px;
+  margin-bottom: 72px;
+}
+
+.hero-btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #4d5ae5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-bg-wrap {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-bg-tab.jpg);
+    max-width: 768px;
+  }
+
+  .hero-wrap {
+    padding-block: 112px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-bg-wrap {
+    background-image:
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero-bg.jpg);
+    max-width: 1440px;
+  }
+
+  .hero-wrap {
+    padding-block: 188px;
+  }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+}
+/* #endregion hero */
